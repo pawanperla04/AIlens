@@ -1,0 +1,22 @@
+<html>
+<h3><u>Projects</u></h3>
+<div id="container">
+    <!-- <div class="item" *ngFor="let item of items; let i = index">
+    <div class="heading" (click)="toggleItem(i)">
+      <h3 class="head">{{ item.title }}</h3>
+    </div>
+    <div class="content" *ngIf="item.active">
+      <div [innerHTML]="item.content"></div>
+    </div>
+  </div> -->
+  <br>
+    <div class="pritams-heading">
+        @for (item of items; track item) {
+        <h3 class="head" (click)="toggleItem(item)">{{ item.title }}</h3>
+        }
+    </div>
+    <div class="pritams" [innerHTML]="selecetdItem.content">
+    </div>
+    <br>
+    <br>
+</div>

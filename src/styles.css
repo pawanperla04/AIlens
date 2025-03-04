@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background: linear-gradient(to right, #0c0c1d, #1a1a3d, #2a2a5a); /* Dark blue gradient */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 80px;
+  min-height: 100vh;
+  scroll-margin-top: 80px;
+}
+
+main {
+  margin-top: 60px; /* Adjust based on your header height */
+}
+

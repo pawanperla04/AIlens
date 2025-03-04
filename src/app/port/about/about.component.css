@@ -1,0 +1,214 @@
+
+
+/* Headings */
+h3 {
+    color: #f1f5f8f7; /* Neon blue accent */
+    font-style: normal;
+    font-weight: bold;
+    
+}
+
+/* About Me Section */
+p {
+    margin-top: -10px;
+    background-color: #1a1a3d; /* Darker blue background */
+    line-height: 1.6; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 170, 255, 0.3); /* Neon glow effect */
+    color: #ffffff;
+}
+
+/* Profile Image */
+img {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 15px rgba(0, 170, 255, 0.5); /* Blue shadow */
+    border: 3px solid #00aaff;
+}
+
+h4 {
+    margin-top: -20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00aaff; 
+}
+
+td {
+    text-align: center;
+    background-color: #15152d;
+    padding: 10px;
+    border: 1px solid #2a2a5a;
+    color:#ffffff;}
+th {
+        text-align: center;
+        background-color: #15152d;
+        padding: 10px;
+        border: 1px solid #2a2a5a;
+        color: #ff9500;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.3); 
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Profile Section */
+.profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 3rem;
+}
+
+.profile-image {
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.name {
+    font-size: 2.5rem;
+    color: #64ffda; /* Modern cyan color */
+    margin-bottom: 2rem;
+    text-shadow: 0 0 15px rgba(100, 255, 218, 0.3);
+    transition: color 0.3s ease;
+}
+
+.name:hover {
+    color: #7fffd4; /* Slightly lighter cyan on hover */
+}
+
+.title {
+    color: #ff9500; /* Bright orange */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(255, 149, 0, 0.3);
+    transition: color 0.3s ease;
+    width: fit-content;
+    margin-left: 400px;
+}
+
+.title:hover {
+    color: #f7f8fd; /* Slightly lighter orange on hover */
+}
+
+.tag {
+    background: rgba(108, 99, 255, 0.1);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(108, 99, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(108, 99, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Education Timeline */
+.education-timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item {
+    position: relative;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(10px);
+}
+
+.timeline-content h3 {
+    color: #64ffda; /* Modern cyan/mint color */
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+    transition: color 0.3s ease;
+}
+
+.timeline-content h3:hover {
+    color: #7f7fd5; /* Soft purple on hover */
+}
+
+.institution {
+    color: #ff9500; /* Bright orange color */
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(255, 149, 0, 0.3);
+    transition: color 0.3s ease;
+}
+
+.institution:hover {
+    color: #ffa533; /* Slightly lighter orange on hover */
+}
+.score {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(108, 99, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+}
+.section-title{
+    color: #ff9500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 1rem;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .timeline-item {
+        padding: 1.5rem;
+    }
+}
+
+
