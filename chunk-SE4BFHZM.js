@@ -1,4 +1,4 @@
-import{Aa as u,Ba as x,Ca as r,Da as n,Ea as s,Fa as h,Ga as C,Ha as b,Ia as l,Ja as y,U as c,V as d,ja as p,ka as a,ra as m,ya as f,za as g}from"./chunk-YODBOYPD.js";function w(t,i){if(t&1){let e=h();r(0,"h3",4),C("click",function(){let I=c(e).$implicit,v=b();return d(v.toogle(I))}),l(1),n()}if(t&2){let e=i.$implicit;a(),y(e.title)}}var _=class t{courses=[{title:"Certified In Python",content:`<ul>
+import{Aa as u,Ba as x,Ca as r,Da as n,Ea as s,Fa as h,Ga as C,Ha as b,Ia as l,Ja as y,U as c,V as d,ja as p,ka as a,ra as m,ya as f,za as g}from"./chunk-RLGLQKXM.js";function w(t,i){if(t&1){let e=h();r(0,"h3",4),C("click",function(){let I=c(e).$implicit,v=b();return d(v.toogle(I))}),l(1),n()}if(t&2){let e=i.$implicit;a(),y(e.title)}}var _=class t{courses=[{title:"Certified In Python",content:`<ul>
         <li>Certifying Authority: Internpe</li>
         <li>Demonstrating expertise in fundamental concepts such as syntax, data types, control structures, and functions.</li>
         <li>Utilizing Python for various applications in web development and data analysis using libraries like Matplotlib, NumPy, Pandas</li>
