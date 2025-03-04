@@ -122,11 +122,13 @@ table {
 .tag {
     background: rgba(108, 99, 255, 0.1);
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     border-radius: 20px;
     font-size: 0.9rem;
     border: 1px solid rgba(108, 99, 255, 0.3);
     transition: all 0.3s ease;
+    width: 300px;
+    margin: 9px;
 }
 
 .tag:hover {
