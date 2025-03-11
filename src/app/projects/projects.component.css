@@ -1,58 +1,33 @@
-/*#container {
-    width: 1500px; 
-    display: flex; 
-    flex-wrap: wrap;
-    gap: 10px; 
-
-.item {
-    display: inline-block;
-    width: 400px;
-    padding: 10px;
-    border: solid #ccc;
-    border-color: darkgoldenrod;
-    margin: 20px;
-    height: 40px;
-    text-align: center; 
-    .heading{
-        color: red;
-        cursor: pointer;
-        padding: 20px 20px;
-        text-size-adjust: 30px;
-    }
-    .content{
-        color: blue;
-        width: 1000px;
-        text-align: justify;
-        align-items: start;
-        line-height: 40px;
-        display: block;
-        
-
-    }
-    }*/
 /* Headings */
 h3 {
     color: #00aaff; /* Neon blue */
 }
 
 /* Header Box */
-#container{ 
-        background-color: #15152d;
-        border-radius: 10px;
-      
-      
+#container { 
+    background-color: #15152d;
+    border-radius: 10px;
 }
+
+.contain {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 200px;
+}
+
 .head {
-    margin-top: -10px;
-    color: #ff9500; /* Bright neon orange */
+    color: #ff9500;
     border: 1px solid #ff9500;
-    padding: 10px 10px;
-    margin: 40px auto;
-    width: 250px; /* Slightly larger */
+    padding: 1rem 1.5rem;
+    margin: 1rem auto;
+    width: fit-content;
+    min-width: 200px;
+    max-width: 90%;
     text-align: center;
-    background: #1a1a3d; /* Darker box */
-    box-shadow: 0px 0px 10px rgba(255, 149, 0, 0.5); /* Orange glow */
+    background: #1a1a3d;
+    box-shadow: 0px 0px 10px rgba(255, 149, 0, 0.5);
     border-radius: 8px;
+    transition: all 0.3s ease;
 }
 
 /* Flex Heading Container */
@@ -62,19 +37,91 @@ h3 {
     width: 100%;
     cursor: pointer;
     margin-top: -40px;
+    justify-content: center;
 }
 
 /* Content Box */
 .pritams {
-    border: 1px solid #00aaff; /* Blue border */
+    border: 1px solid #00aaff;
     color: #ffffff;
-    width: 1300px;
+    max-width: 1200px; /* Adjusted width */
     line-height: 30px;
-    margin-left: 30px;
-    padding: 15px;
-    background: #15152d; /* Dark section background */
-    box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.3); /* Subtle glow */
+    margin: 0 auto;
+    padding: 20px;
+    background: #15152d;
+    box-shadow: 0px 0px 10px rgba(0, 170, 255, 0.3);
     border-radius: 10px;
     font-style: normal;
     font-size: medium;
+}
+
+.projects-container {
+    max-width: 1200px; /* Match about component */
+    margin: 0 auto;
+    padding: 2rem;
+    height: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+    color: #64ffda;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.3);
+}
+
+/* Skills Tags */
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.tag {
+    background: rgba(100, 255, 218, 0.1);
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    transition: all 0.3s ease;
+}
+
+.tag:hover {
+    background: rgba(100, 255, 218, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(100, 255, 218, 0.2);
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 1rem;
+    }
+
+    .pritams {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .skills-section {
+        padding: 1.5rem;
+    }
+
+    .tag {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
 }

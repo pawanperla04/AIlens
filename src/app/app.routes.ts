@@ -1,21 +1,11 @@
 import { Routes } from '@angular/router';
+import { AboutComponent } from './port/about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { CertificatesComponent } from './certificates/certificates.component';
 
 export const routes: Routes = [
-    {
-        path:' ',
-        redirectTo:'about',
-        pathMatch:'full'
-    },
-    {
-        path:'about',
-        loadComponent: ()=>import('./port/about/about.component').then(m => m.AboutComponent)
-    },
-    {
-        path:'projects',
-        loadComponent: ()=>import('./projects/projects.component').then(m => m.ProjectsComponent)
-    },
-    {
-        path:'certificates',
-        loadComponent: ()=>import('./certificates/certificates.component').then(m => m.CertificatesComponent)
-    },
+    {path: "", component: AboutComponent},
+    {path:'about',component: AboutComponent},
+    {path:'projects',component: ProjectsComponent},
+    {path:'certificates', component: CertificatesComponent},
 ];

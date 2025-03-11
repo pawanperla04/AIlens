@@ -1,20 +1,16 @@
-<html>
-    <body>
-        
-        <h3><u>CERTIFICATIONS</u></h3>
-        <br>
-        <br>
-        <div id="container">
-            <div class="pritams-heading">
-                @for (item of courses; track item) {
-                <h3 class="head" (click)="toogle(item)">{{ item.title }}</h3>
-                }
-            </div>
-            <div class="pritams" [innerHTML]="selected.content">
-            </div>
-            <br>
-            <br>
-            <br>
-        </div>
-    </body>
-</html>
+<div class="contain">
+  <div class="projects-container">
+    <!-- Technical Skills Section -->
+    <section class="skills-section">
+      <h2 class="section-title">Certificates</h2>
+      <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="pritams-heading">
+        @for (item of courses; track item) {
+        <h3 class="head" (click)="toogle(item)">{{ item.title }}</h3>
+        }
+    </div>
+    <div class="pritams" [innerHTML]="selected.content">
+    </div>
+    </section>
+    </section>

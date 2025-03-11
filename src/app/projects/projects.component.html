@@ -1,6 +1,38 @@
 <html>
-<h3><u>Projects</u></h3>
-<div id="container">
+ 
+<div class="contain">
+  <div class="projects-container">
+    <!-- Technical Skills Section -->
+    <section class="skills-section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-tags">
+        <span class="tag">Python</span>
+        <span class="tag">C++</span>
+        <span class="tag">SQL</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Azure</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">NLP</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Angular</span>
+      </div>
+      <!-- Projects Section -->
+    <section class="projects-section">
+      <h2 class="section-title">Projects</h2>
+      <br>
+      <br>
+      <div class="pritams-heading">
+        @for (item of items; track item) {
+          <h3 class="head" (click)="toggleItem(item)">{{ item.title }}</h3>
+        }
+      </div>
+      <div class="pritams" [innerHTML]="selecetdItem.content"></div>
+    </section>
+    </section>
+
+    
     <!-- <div class="item" *ngFor="let item of items; let i = index">
     <div class="heading" (click)="toggleItem(i)">
       <h3 class="head">{{ item.title }}</h3>
@@ -9,14 +41,3 @@
       <div [innerHTML]="item.content"></div>
     </div>
   </div> -->
-  <br>
-    <div class="pritams-heading">
-        @for (item of items; track item) {
-        <h3 class="head" (click)="toggleItem(item)">{{ item.title }}</h3>
-        }
-    </div>
-    <div class="pritams" [innerHTML]="selecetdItem.content">
-    </div>
-    <br>
-    <br>
-</div>

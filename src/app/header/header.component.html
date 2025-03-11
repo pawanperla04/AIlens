@@ -55,9 +55,12 @@
     <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
-            <a (click)="scrollToSection('about')">About</a>
+            <!-- <a (click)="scrollToSection('about')">About</a>
             <a (click)="scrollToSection('projects')">Projects</a>
-            <a (click)="scrollToSection('certificates')">Certificates</a>
+            <a (click)="scrollToSection('certificates')">Certificates</a> -->
+            <a routerLink="/about">about</a>
+            <a routerLink="/projects">Projects</a>
+            <a routerLink="/certificates">Certiificates</a>
         </div>
     </div>
 </header>
